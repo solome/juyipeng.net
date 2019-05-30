@@ -1,0 +1,27 @@
+{
+  "name": "realsee.club",
+  "version": "1.0.0",
+  "description": "如视俱乐部",
+  "main": "index.js",
+  "author": "solome",
+  "license": "MIT",
+  "scripts": {
+    "webpack@server": "cross-env NODE_ENV=production webpack --config ./node_modules/@app-proto/ify/webpack/server.webpack.config.js",
+    "analyzer": "cross-env NODE_ENV=production analyzer=true webpack --config ./node_modules/@app-proto/ify/webpack/browser.webpack.config.js",
+    "webpack": "cross-env NODE_ENV=production gulp --gulpfile=node_modules/@app-proto/ify/gulpfile.js --cwd=./ webpack",
+    "dev": "cross-env NODE_ENV=development gulp --gulpfile=node_modules/@app-proto/ify/gulpfile.js --cwd=./ run"
+  },
+  "dependencies": {
+    "@app-proto/ify": "^1.1.1",
+    "@app-proto/recipes": "^1.4.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "three": "^0.104.0",
+    "vue": "^2.6.9",
+    "vue-server-renderer": "^2.6.9"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "koa-static": "^5.0.0"
+  }
+}

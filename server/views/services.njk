@@ -1,0 +1,12 @@
+{% extends 'layouts/main.njk' %}
+
+{% block stylesheet %}
+  {% stylesheet page %}
+{% endblock %}
+
+{% block assets %}
+{% endblock %}
+
+{% block main %}
+  {% render page, state, name %}
+{% endblock %}
