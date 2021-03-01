@@ -16,7 +16,7 @@
     "@app-proto/recipes": "^1.4.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "three": "^0.104.0",
+    "three": "^0.125.0",
     "vue": "^2.6.9",
     "vue-server-renderer": "^2.6.9"
   },
